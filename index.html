@@ -17,10 +17,75 @@
     <title>Train Scheduler</title>
 
     <body>
+            <div class = "container"> 
 
-            <div> Train Scheduler</div>
+                <div class = "jumbotron">
+                        <h1>Train Schedule </h1>
+                        <br>
+                        
+                </div>
 
+            <div class="card mb-4">
+              <div class="card-header">Current Train Schedule</div>
+                <div class="card-body">
+                  <table class="table table-sm table-hover"  id = "trainTable">
+                    <thead class="thead">
+                      <tr class= "schedChartHead">
+                        <td scope="row">Train Name</th>
+                        <td>Destination</td>
+                        <td>Frequency(min)</td>
+                        <td>Next Arrival</td>
+                        <td>Minutes Away</td>
+                      </tr> 
+                      </thead>
+                  <tbody>
+                    <tr class = "schedData">
+                      <td scope="row" class = "name">Hogwarts Express</th>
+                      <td class = "destination">Hogwarts</td>
+                      <td class = "frequency">525,600</td>
+                      <td class = "nextArrival">11:00 AM</td>
+                      <td class = "minutesAway">100</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+    
+                
+            <div class="card mb-4">
+              <div class="card-header">Add Train</div>
+                <div class="card-body">
 
+                     <div class="form-group">
+                                    <label for="exampleInputEmail1">Train Name</label>
+                                    <input type="text" class="form-control" id="trainName" aria-describedby="emailHelp" placeholder="Train Name">
+                                  </div> 
+                      
+                               
+                                  <div class="form-group">
+                                    <label for="exampleInputPassword1">Destination</label>
+                                    <input type="text" class="form-control" id="destination" placeholder="Destination">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputPassword1">First Train Time</label>
+                                    <input type="text" class="form-control" id="firstTrain" placeholder="HH:mm (military time)">
+                                  </div>
+                  
+                                  <div class="form-group">
+                                    <label for="exampleInputPassword1">Frequency</label>
+                                    <input type="text" class="form-control" id="frequency" placeholder="Frequency in Minutes">
+                                  </div>
+                          
+
+                                    <button type="submit" id = "submit" class="btn btn-primary">Submit</button>
+                            </form>
+                  </div>
+                  </div>
+
+    
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+                <script src="assets/javascript/scheduler.js"></script>
 
     </body>
 </html>

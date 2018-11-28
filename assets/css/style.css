@@ -1,0 +1,51 @@
+
+body{
+    background-color: gainsboro;
+}
+
+.container{
+    background-color: white;
+}
+
+.card-header{
+    background-color:  rgb(26, 39, 36);
+    color: white;
+   
+ 
+}
+
+.jumbotron{
+
+    background-color: rgb(48, 83, 87);
+    color: white;
+    text-align: center;
+    height: 200px;
+   
+}
+
+
+
+.card-body{
+    border: 5px solid rgb(26, 39, 36);
+}
+
+.tableH{
+    background-color: rgb(26, 39, 36);
+    color: white;
+
+}
+
+.schedChartHead{
+    font-style: oblique;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h4{
+    font-size: 20px;
+}
+th{
+    font: bolder;
+}
